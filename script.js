@@ -1,1 +1,4 @@
-console.log("Portfolio prêt 🚀");
+function toggleMenu() {
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("active");
+}
