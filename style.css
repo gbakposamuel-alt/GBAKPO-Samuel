@@ -1,24 +1,104 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #0b0f0c;
+  color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px 20px;
+  background: #111;
+  position: sticky;
+  top: 0;
+}
+
+/* MENU PC */
+#menu {
+  display: flex;
+  gap: 15px;
+}
+
+#menu a {
+  text-decoration: none;
+  color: #aaa;
+}
+
+#menu a:hover {
+  color: #00ff88;
+}
+
+/* ACTIONS */
+.actions {
+  margin-left: auto;
+}
+
+.actions a {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
 /* HAMBURGER */
 .hamburger {
-  font-size: 24px;
-  cursor: pointer;
   display: none;
 }
 
-/* MENU MOBILE */
-#menu {
-  display: flex;
+/* SECTIONS */
+.section {
+  padding: 60px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  background: #121712;
 }
 
-/* MOBILE VERSION */
-@media (max-width: 768px) {
+/* HERO */
+.hero {
+  text-align: center;
+}
 
-  .navbar {
-    align-items: center;
-  }
+.profile {
+  width: 140px;
+  border-radius: 50%;
+}
+
+/* TAGS */
+.tags span {
+  display: inline-block;
+  margin: 5px;
+  padding: 8px;
+  background: #1a201a;
+  border-radius: 10px;
+}
+
+/* CARDS */
+.card {
+  background: #1a201a;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.card a {
+  color: #00ff88;
+}
+
+/* CONTACT */
+.contact a {
+  display: block;
+  margin: 10px 0;
+  color: #00ff88;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
 
   .hamburger {
     display: block;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
   }
 
   #menu {
@@ -32,15 +112,8 @@
     border-radius: 10px;
   }
 
-  #menu a {
-    margin: 10px 0;
-  }
-
   #menu.active {
     display: flex;
   }
 
-  .actions {
-    margin-left: auto;
-  }
 }
