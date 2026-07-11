@@ -13,12 +13,18 @@ body {
   background: #111;
   position: sticky;
   top: 0;
+  flex-wrap: wrap;
 }
 
 .navbar nav a {
-  margin: 0 10px;
+  margin: 5px 10px;
   text-decoration: none;
   color: #aaa;
+  font-size: 14px;
+}
+
+.navbar nav a:hover {
+  color: #00ff88;
 }
 
 .actions a {
@@ -71,10 +77,21 @@ h2 {
   border-radius: 15px;
 }
 
+.card a {
+  color: #00ff88;
+  text-decoration: none;
+}
+
 /* CONTACT */
 .contact a {
   display: block;
   margin: 10px 0;
   text-decoration: none;
   color: #00ff88;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #777;
 }
