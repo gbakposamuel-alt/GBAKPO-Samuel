@@ -1,97 +1,46 @@
-body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #0b0f0c;
-  color: #fff;
+/* HAMBURGER */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
 }
 
-/* NAVBAR */
-.navbar {
+/* MENU MOBILE */
+#menu {
   display: flex;
-  justify-content: space-between;
-  padding: 15px 20px;
-  background: #111;
-  position: sticky;
-  top: 0;
-  flex-wrap: wrap;
 }
 
-.navbar nav a {
-  margin: 5px 10px;
-  text-decoration: none;
-  color: #aaa;
-  font-size: 14px;
-}
+/* MOBILE VERSION */
+@media (max-width: 768px) {
 
-.navbar nav a:hover {
-  color: #00ff88;
-}
+  .navbar {
+    align-items: center;
+  }
 
-.actions a {
-  margin-left: 10px;
-  font-size: 18px;
-}
+  .hamburger {
+    display: block;
+  }
 
-/* SECTIONS */
-.section {
-  padding: 60px 20px;
-  margin: 20px;
-  border-radius: 20px;
-  background: #121712;
-}
+  #menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    background: #121712;
+    padding: 15px;
+    border-radius: 10px;
+  }
 
-/* HERO */
-.hero {
-  text-align: center;
-}
+  #menu a {
+    margin: 10px 0;
+  }
 
-.profile {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-}
+  #menu.active {
+    display: flex;
+  }
 
-/* TITRES */
-h1 span {
-  color: #00ff88;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-/* TAGS */
-.tags span {
-  display: inline-block;
-  padding: 8px 12px;
-  margin: 5px;
-  background: #1a201a;
-  border-radius: 20px;
-}
-
-/* CARDS */
-.card {
-  background: #1a201a;
-  padding: 20px;
-  margin-bottom: 15px;
-  border-radius: 15px;
-}
-
-.card a {
-  color: #00ff88;
-  text-decoration: none;
-}
-
-/* CONTACT */
-.contact a {
-  display: block;
-  margin: 10px 0;
-  text-decoration: none;
-  color: #00ff88;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  color: #777;
+  .actions {
+    margin-left: auto;
+  }
 }
