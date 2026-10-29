@@ -1,0 +1,12 @@
+# Fichiers système / éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Dépendances éventuelles (le site n’en utilise aucune)
+node_modules/
+
+# Journaux
+*.log
