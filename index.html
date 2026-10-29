@@ -1,144 +1,619 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>GBAKPO Samuel | Référent digital</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="script.js" defer></script>
+  <title>GBAKPO Samuel — Référent digital à Parakou, Bénin</title>
+  <meta name="description" content="Référent digital à Parakou : gestion de projets, communication digitale, design graphique et formation aux outils numériques. Au Bénin et à distance.">
+  <meta name="author" content="GBAKPO Samuel">
+  <meta name="theme-color" content="#0B1220">
+  <meta name="color-scheme" content="dark light">
+
+  <!-- Partage sur les réseaux sociaux -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="GBAKPO Samuel — Référent digital">
+  <meta property="og:title" content="GBAKPO Samuel — Référent digital à Parakou, Bénin">
+  <meta property="og:description" content="Gestion de projets, communication digitale, design graphique et formation : j’accompagne vos idées numériques avec méthode.">
+  <meta property="og:image" content="assets/images/samuel-gbakpo.jpg">
+  <meta property="og:image:alt" content="GBAKPO Samuel travaillant à son bureau">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GBAKPO Samuel — Référent digital à Parakou, Bénin">
+  <meta name="twitter:description" content="Gestion de projets, communication digitale, design graphique et formation : j’accompagne vos idées numériques avec méthode.">
+  <meta name="twitter:image" content="assets/images/samuel-gbakpo.jpg">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Sans JavaScript : la navigation reste accessible sur mobile -->
+  <noscript>
+    <style>
+      .menu-button { display: none !important; }
+      @media (max-width: 900px) {
+        .header { height: auto; padding: 18px 0; flex-wrap: wrap; gap: 14px; }
+        .nav {
+          position: static;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          gap: 14px 22px;
+          padding: 0;
+          background: none;
+          border: 0;
+          box-shadow: none;
+        }
+        .nav .button { margin-top: 0; min-height: 42px; }
+      }
+    </style>
+  </noscript>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "GBAKPO Samuel",
+    "jobTitle": "Référent digital",
+    "email": "mailto:gbakposamuel@gmail.com",
+    "telephone": "+2290161585786",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ladjifarani",
+      "addressLocality": "Parakou",
+      "addressCountry": "BJ"
+    },
+    "areaServed": ["Parakou", "Bénin", "À distance"],
+    "sameAs": ["https://www.facebook.com/samuel.gbakpo.5"]
+  }
+  </script>
 </head>
-
 <body>
 
-<header class="navbar">
+<!-- Bibliothèque d’icônes (tracés issus de la maquette) -->
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-sprite" aria-hidden="true" focusable="false">
+  <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="icon-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M10 12v2h4v-2"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+  <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 9-4 3 4 3M16 9l4 3-4 3M14 5l-4 14"/></symbol>
+  <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 8h3V4h-3c-3 0-5 2-5 5v3H6v4h3v6h4v-6h3l1-4h-4V9c0-.6.4-1 1-1Z"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 7 9-7"/></symbol>
+  <symbol id="icon-map" viewBox="0 0 24 24"><path d="M20 10c0 5-8 11-8 11S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+  <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 15a4 4 0 0 1-4 4H8l-5 3V7a4 4 0 0 1 4-4h10a4 4 0 0 1 4 4v8Z"/><path d="M8 9h8M8 13h5"/></symbol>
+  <symbol id="icon-palette" viewBox="0 0 24 24"><path d="M12 3a9 9 0 0 0 0 18h1.5a2 2 0 0 0 0-4H12a2 2 0 0 1 0-4h4a5 5 0 0 0 0-10h-4Z"/><circle cx="7.5" cy="9" r=".5"/><circle cx="9.5" cy="6.5" r=".5"/><circle cx="14" cy="6.5" r=".5"/></symbol>
+  <symbol id="icon-play" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m10 9 5 3-5 3V9Z"/></symbol>
+  <symbol id="icon-quote" viewBox="0 0 24 24"><path d="M10 11H5a4 4 0 0 1 4-4M19 11h-5a4 4 0 0 1 4-4"/><path d="M10 11v5a3 3 0 0 1-3 3H5M19 11v5a3 3 0 0 1-3 3h-2"/></symbol>
+  <symbol id="icon-strategy" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/><path d="m15.5 8.5 4-4"/></symbol>
+  <symbol id="icon-training" viewBox="0 0 24 24"><path d="m3 10 9-5 9 5-9 5-9-5Z"/><path d="M7 12.5V17c3 2 7 2 10 0v-4.5M21 10v6"/></symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24"><path d="M20 11.5a8 8 0 0 1-11.8 7L3 20l1.4-5A8 8 0 1 1 20 11.5Z"/><path d="M8 8c.5 3 2 4.5 5 5l1-1 2 1c0 2-1 3-3 3-4 0-7-3-7-7 0-2 1-3 2-3l1 2-1 0Z"/></symbol>
+</svg>
 
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
+<a class="skip-link" href="#contenu">Aller au contenu principal</a>
 
-  <nav id="menu">
-    <a href="#accueil">Accueil</a>
-    <a href="#apropos">À propos</a>
-    <a href="#competences">Compétences</a>
-    <a href="#services">Services</a>
-    <a href="#projets">Projets</a>
-    <a href="#certificats">Certificats</a>
-    <a href="#outils">Outils</a>
-    <a href="#contact">Contact</a>
-  </nav>
+<div class="site-shell">
 
-  <div class="actions">
-    <a href="mailto:gbakposamuel@gmail.com">✉</a>
-    <a href="tel:+2290161585786">📞</a>
-  </div>
-
-</header>
-
-<!-- HERO -->
-<section class="section hero" id="accueil">
-  <img src="Gbakpo Samuel.png" class="profile">
-  <h1>Je suis <span>GBAKPO Samuel</span></h1>
-  <p>Référent digital passionné par la communication numérique.</p>
-</section>
-
-<!-- A PROPOS (VERSION PRO) -->
-<section class="section" id="apropos">
-  <h2>À propos</h2>
-  <p>
-    Référent digital dynamique et orienté résultats, je suis spécialisé dans
-    la mise en place de stratégies de communication numérique efficaces.
-    J’accompagne les entreprises et entrepreneurs dans le développement de
-    leur visibilité en ligne, l’optimisation de leur image de marque et
-    l’atteinte de leurs objectifs grâce aux outils digitaux.
-    Créatif, rigoureux et passionné par l’innovation, je m’engage à proposer
-    des solutions adaptées aux réalités du marché.
-  </p>
-</section>
-
-<!-- COMPETENCES -->
-<section class="section" id="competences">
-  <h2>Compétences</h2>
-  <div class="tags">
-    <span>Community management</span>
-    <span>SEO</span>
-    <span>Graphisme</span>
-    <span>Web design</span>
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="section" id="services">
-  <h2>Services</h2>
-
-  <div class="card">
-    <h3>Stratégie digitale</h3>
-    <p>Développement de présence en ligne.</p>
-  </div>
-
-  <div class="card">
-    <h3>Gestion réseaux sociaux</h3>
-    <p>Animation et création de contenu.</p>
-  </div>
-</section>
-
-<!-- PROJETS -->
-<section class="section" id="projets">
-  <h2>Projets</h2>
-
-  <div class="card">
-    <h3>Lucisca Cosmétique</h3>
-    <p>Identité visuelle & communication digitale</p>
-    <a href="https://drive.google.com/drive/folders/1rd_U_rzqtKPejoghy60HemrKhLipJ1z7" target="_blank">
-      Voir le projet
+  <header class="header">
+    <a class="brand" href="#accueil" aria-label="GBAKPO Samuel — Accueil">
+      <span aria-hidden="true">GS</span>
+      <strong>GBAKPO<br>Samuel</strong>
     </a>
-  </div>
 
-</section>
+    <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+      <a href="#a-propos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#projets">Projets</a>
+      <a href="#competences">Compétences</a>
+      <a href="#parcours">Parcours</a>
+      <a class="button button--primary" href="#contact">
+        <span>Me contacter</span>
+        <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-message"></use></svg>
+      </a>
+    </nav>
 
-<!-- CERTIFICATS -->
-<section class="section" id="certificats">
-  <h2>Certificats</h2>
+    <button class="menu-button" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+      <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <use href="#icon-menu" data-icon-open></use>
+        <use href="#icon-close" data-icon-close></use>
+      </svg>
+    </button>
+  </header>
 
-  <div class="card">
-    <h3>Initiation informatique</h3>
-    <p>CBELS</p>
-  </div>
+  <main id="contenu">
 
-</section>
+    <!-- 01 — Accueil -->
+    <section class="hero" id="accueil" aria-labelledby="hero-title">
+      <div class="hero__content">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Référent digital · Parakou, Bénin</p>
+        <h1 id="hero-title">Le digital doit aider<br>votre activité à <em>avancer.</em></h1>
+        <p class="hero__lead">
+          J’accompagne les entreprises, les marques et les entrepreneurs à transformer leurs idées
+          en actions digitales <strong>claires, cohérentes et bien organisées.</strong>
+        </p>
+        <div class="hero__actions">
+          <a class="button button--primary" href="#contact">
+            <span>Discutons de votre projet</span>
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-message"></use></svg>
+          </a>
+          <a class="button button--secondary" href="#projets">
+            <span>Découvrir mes réalisations</span>
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+        </div>
+        <div class="hero__meta">
+          <div>
+            <strong>Gestion</strong>
+            <span>de projets digitaux</span>
+          </div>
+          <div>
+            <strong>Communication</strong>
+            <span>&amp; réseaux sociaux</span>
+          </div>
+          <div>
+            <strong>Création</strong>
+            <span>graphique &amp; supports</span>
+          </div>
+        </div>
+      </div>
 
-<!-- OUTILS -->
-<section class="section" id="outils">
-  <h2>Outils maîtrisés</h2>
+      <div class="hero__visual">
+        <div class="portrait-frame">
+          <img
+            src="assets/images/samuel-gbakpo.jpg"
+            srcset="assets/images/samuel-gbakpo-640.jpg 640w, assets/images/samuel-gbakpo.jpg 1086w"
+            sizes="(min-width: 561px) and (max-width: 900px) 470px, (max-width: 900px) 92vw, (max-width: 1024px) 45vw, 560px"
+            width="1086" height="1448"
+            alt="GBAKPO Samuel travaillant à son bureau"
+            fetchpriority="high" decoding="async">
+        </div>
+        <div class="floating-card floating-card--top">
+          <span class="floating-icon" aria-hidden="true">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-strategy"></use></svg>
+          </span>
+          <span>
+            <small>Une approche</small>
+            <strong>Clair. Utile. Suivi.</strong>
+          </span>
+        </div>
+        <div class="floating-card floating-card--bottom">
+          <span class="floating-icon" aria-hidden="true">
+            <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-map"></use></svg>
+          </span>
+          <span>
+            <small>Basé à Parakou</small>
+            <strong>Disponible au Bénin &amp; à distance</strong>
+          </span>
+        </div>
+        <span class="hero__scribble" aria-hidden="true">Idées → Actions</span>
+      </div>
+    </section>
 
-  <div class="tools">
+    <section class="trust-strip" aria-label="Domaines d’intervention">
+      <span>Mon terrain d’action</span>
+      <div>
+        <b>Stratégie digitale</b>
+        <i aria-hidden="true"></i>
+        <b>Community Management</b>
+        <i aria-hidden="true"></i>
+        <b>Design graphique</b>
+        <i aria-hidden="true"></i>
+        <b>Formation</b>
+      </div>
+    </section>
 
-    <div class="tool">🎨 Canva</div>
-    <div class="tool">🖌 Photoshop</div>
-    <div class="tool">✏ Illustrator</div>
-    <div class="tool">🧩 Figma</div>
-    <div class="tool">🤖 IA</div>
-    <div class="tool">📋 Trello</div>
-    <div class="tool">🎬 CapCut</div>
-    <div class="tool">💻 VS Code</div>
-    <div class="tool">🗂 Notion</div>
+    <!-- 02 — À propos -->
+    <section class="section about" id="a-propos" aria-labelledby="about-title">
+      <div class="about__aside">
+        <p class="eyebrow">02 — À propos</p>
+        <h2 id="about-title">La méthode au service de la <em>créativité.</em></h2>
+        <div class="about__quote">
+          <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-quote"></use></svg>
+          <p>Un projet digital réussi doit répondre à un besoin, parler au bon public et pouvoir être suivi dans le temps.</p>
+        </div>
+      </div>
 
-  </div>
+      <div class="about__body">
+        <p class="about__lead">Mon parcours associe le numérique, la communication, la gestion de projet et l’accompagnement des personnes.</p>
+        <p>
+          J’interviens sur la préparation et le suivi de projets digitaux, la création de contenus,
+          le graphisme et l’animation de communautés. Mon expérience de supervision et de formation
+          informatique me permet d’aborder chaque mission avec méthode, tout en rendant les outils accessibles.
+        </p>
+        <div class="process">
+          <div class="process__item"><span aria-hidden="true">01</span><strong>Écouter &amp; clarifier</strong></div>
+          <div class="process__item"><span aria-hidden="true">02</span><strong>Définir &amp; organiser</strong></div>
+          <div class="process__item"><span aria-hidden="true">03</span><strong>Créer les bons supports</strong></div>
+          <div class="process__item"><span aria-hidden="true">04</span><strong>Suivre &amp; ajuster</strong></div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <!-- 03 — Services -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="section-heading">
+        <p class="eyebrow">03 — Services</p>
+        <h2 id="services-title">Des solutions pensées pour vos objectifs.</h2>
+        <p class="section-intro">Chaque projet est différent. Je pars de votre situation pour proposer des actions réalistes, adaptées et faciles à suivre.</p>
+      </div>
 
-<!-- CONTACT -->
-<section class="section contact" id="contact">
-  <h2>Contact</h2>
+      <div class="services__grid">
+        <article class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-strategy"></use></svg>
+            </span>
+            <span class="service-card__number" aria-hidden="true">01</span>
+          </div>
+          <h3>Stratégie &amp; gestion de projets</h3>
+          <p class="service-card__need">Structurer une idée numérique, définir ses priorités et garder le cap.</p>
+          <p>Clarification des objectifs, planification, coordination et suivi de l’avancement.</p>
+          <div class="tag-list">
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Plan d’action</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Calendrier</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Tableau de suivi</span>
+          </div>
+        </article>
 
-  <p>📍 Parakou, Bénin</p>
+        <article class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-message"></use></svg>
+            </span>
+            <span class="service-card__number" aria-hidden="true">02</span>
+          </div>
+          <h3>Communication digitale</h3>
+          <p class="service-card__need">Construire une présence en ligne cohérente et régulière.</p>
+          <p>Ligne éditoriale, création de contenus, animation de communauté et suivi des performances.</p>
+          <div class="tag-list">
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Calendrier éditorial</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Contenus</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Bilan</span>
+          </div>
+        </article>
 
-  <a href="mailto:gbakposamuel@gmail.com">✉ Email</a>
-  <a href="tel:+2290161585786">📞 Appel</a>
-</section>
+        <article class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-palette"></use></svg>
+            </span>
+            <span class="service-card__number" aria-hidden="true">03</span>
+          </div>
+          <h3>Graphisme &amp; identité visuelle</h3>
+          <p class="service-card__need">Présenter votre marque avec des supports clairs et reconnaissables.</p>
+          <p>Conception de visuels adaptés à votre identité, vos publics et vos canaux de diffusion.</p>
+          <div class="tag-list">
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Réseaux sociaux</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Flyers</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Identité</span>
+          </div>
+        </article>
 
-<footer>
-  © 2026 GBAKPO Samuel
-</footer>
+        <article class="service-card">
+          <div class="service-card__top">
+            <span class="service-card__icon" aria-hidden="true">
+              <svg class="icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-training"></use></svg>
+            </span>
+            <span class="service-card__number" aria-hidden="true">04</span>
+          </div>
+          <h3>Formation aux outils numériques</h3>
+          <p class="service-card__need">Aider une équipe à gagner en autonomie dans ses usages quotidiens.</p>
+          <p>Accompagnement pédagogique en informatique de base et outils bureautiques collaboratifs.</p>
+          <div class="tag-list">
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Séances</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Exercices</span>
+            <span><svg class="icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-check"></use></svg>Supports</span>
+          </div>
+        </article>
+      </div>
+    </section>
 
+    <!-- 04 — Projets -->
+    <section class="section projects" id="projets" aria-labelledby="projects-title">
+      <div class="section-heading section-heading--light">
+        <p class="eyebrow">04 — Projets sélectionnés</p>
+        <h2 id="projects-title">Des idées transformées en projets concrets.</h2>
+        <p class="section-intro">Deux expériences qui illustrent la coordination de marque, la création visuelle et l’initiative entrepreneuriale.</p>
+      </div>
+
+      <article class="project project--lucisca">
+        <div class="project__visual project__visual--cosmetics">
+          <span class="project__index" aria-hidden="true">01</span>
+          <div class="brand-showcase brand-showcase--lucisca">
+            <span class="brand-showcase__label">Identité &amp; communication</span>
+            <img src="assets/images/lucisca-logo.png" width="312" height="312" alt="Logo officiel Lucisca Cosmétique" decoding="async">
+          </div>
+        </div>
+        <div class="project__content">
+          <span class="project__type">Marque cosmétique</span>
+          <h3>Lucisca<br>Cosmétique</h3>
+          <p>Participation au pilotage du projet, à la création des supports visuels et à la communication de la marque sur les réseaux sociaux.</p>
+          <dl>
+            <div>
+              <dt>Mon rôle</dt>
+              <dd>Chef de projet · Graphiste · Community Manager</dd>
+            </div>
+            <div>
+              <dt>Compétences</dt>
+              <dd>Organisation · Identité visuelle · Contenus · Animation</dd>
+            </div>
+          </dl>
+          <a class="button button--light" href="https://drive.google.com/drive/folders/1xLY4NmnWfimCsvJpgaUcOZ6tKBwiJ9eI?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <span>Voir le dossier du projet</span>
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="project project--htm">
+        <div class="project__content">
+          <span class="project__type">Projet e-commerce</span>
+          <h3>HighTech<br>Market <em>HTM</em></h3>
+          <p>Projet de commerce en ligne dédié au matériel informatique, pensé pour rapprocher les besoins des clients des offres de vendeurs physiques partenaires.</p>
+          <dl>
+            <div>
+              <dt>Mon rôle</dt>
+              <dd>Promoteur du projet</dd>
+            </div>
+            <div>
+              <dt>Compétences</dt>
+              <dd>Vision entrepreneuriale · Structuration · Offre · Communication</dd>
+            </div>
+          </dl>
+          <a class="button button--light" href="https://drive.google.com/drive/folders/12t-gggtR3g49GNZOUHOcmAbFDZYBEOUh?usp=drive_link" target="_blank" rel="noopener noreferrer">
+            <span>Voir le dossier du projet</span>
+            <svg class="icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+          </a>
+        </div>
+        <div class="project__visual project__visual--tech">
+          <span class="project__index" aria-hidden="true">02</span>
+          <div class="brand-showcase brand-showcase--htm">
+            <span class="brand-showcase__label">E-commerce &amp; matériel informatique</span>
+            <img src="assets/images/hightech-market-logo.png" width="1556" height="588" alt="Logo officiel HighTech Market" decoding="async">
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- 05 — Compétences -->
+    <section class="section skills" id="competences" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">05 — Compétences &amp; outils</p>
+        <h2 id="skills-title">Les bons outils, au bon moment.</h2>
+        <p class="section-intro">Je sélectionne mes outils selon les besoins du projet. Les niveaux de maîtrise ne sont volontairement pas attribués lorsqu’ils ne sont pas confirmés.</p>
+      </div>
+
+      <div class="skills__grid">
+        <article class="skill-card">
+          <div class="skill-card__heading">
+            <span aria-hidden="true">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-briefcase"></use></svg>
+            </span>
+            <h3>Gestion &amp; organisation</h3>
+          </div>
+          <div class="tools">
+            <span>Trello*</span>
+            <span>Notion</span>
+          </div>
+          <small>* Appellation à confirmer</small>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card__heading">
+            <span aria-hidden="true">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-palette"></use></svg>
+            </span>
+            <h3>Design graphique</h3>
+          </div>
+          <div class="tools">
+            <span>Adobe Photoshop</span>
+            <span>Adobe Illustrator</span>
+            <span>Canva</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card__heading">
+            <span aria-hidden="true">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-play"></use></svg>
+            </span>
+            <h3>Montage vidéo</h3>
+          </div>
+          <div class="tools">
+            <span>Adobe Premiere Pro</span>
+            <span>CapCut</span>
+          </div>
+        </article>
+
+        <article class="skill-card">
+          <div class="skill-card__heading">
+            <span aria-hidden="true">
+              <svg class="icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-code"></use></svg>
+            </span>
+            <h3>Bureautique &amp; collaboration</h3>
+          </div>
+          <div class="tools">
+            <span>Microsoft Word</span>
+            <span>Microsoft Excel</span>
+            <span>Google Docs</span>
+            <span>Google Sheets</span>
+            <span>Gmail</span>
+            <span>Google Meet</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 06 — Parcours -->
+    <section class="section journey" id="parcours" aria-labelledby="journey-title">
+      <div class="section-heading">
+        <p class="eyebrow">06 — Parcours</p>
+        <h2 id="journey-title">Expériences, formations &amp; attestations.</h2>
+        <p class="section-intro">Les éléments signalés restent à confirmer avant publication définitive, conformément au document source.</p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline__item">
+          <time datetime="2021">2021</time>
+          <div>
+            <span class="badge">Attestation</span>
+            <h3>Initiation à l’outil informatique</h3>
+            <p>CBELS</p>
+          </div>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </article>
+
+        <article class="timeline__item">
+          <time datetime="2021/2022">2021–22</time>
+          <div>
+            <span class="badge">Expérience</span>
+            <h3>Superviseur de bureau</h3>
+            <p>LACBELS</p>
+          </div>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </article>
+
+        <article class="timeline__item">
+          <time datetime="2022">2022</time>
+          <div>
+            <span class="badge">Expérience</span>
+            <h3>Responsable de la gestion des ressources humaines</h3>
+            <p>Bureau exécutif — LACBELS</p>
+          </div>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </article>
+
+        <article class="timeline__item">
+          <time datetime="2024/2025">2024–25</time>
+          <div>
+            <span class="badge">Attestation</span>
+            <h3>Formateur en informatique de base</h3>
+            <p>CBELS</p>
+          </div>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </article>
+
+        <article class="timeline__item">
+          <time datetime="2026">2026</time>
+          <div>
+            <span class="badge badge--pending">À confirmer</span>
+            <h3>Gestion de projets avec Microsoft 365</h3>
+            <p>MTN Skills Academy — juin</p>
+          </div>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </article>
+
+        <article class="timeline__item">
+          <time datetime="2026">2026</time>
+          <div>
+            <span class="badge badge--pending">À confirmer</span>
+            <h3>Référent Digital</h3>
+            <p>Simplon Bénin — date à confirmer</p>
+          </div>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-chevron"></use></svg>
+        </article>
+      </div>
+
+      <div class="testimonial-placeholder">
+        <svg class="icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-quote"></use></svg>
+        <div>
+          <strong>Les témoignages seront ajoutés après validation.</strong>
+          <p>Cet espace est volontairement conservé sans avis fictif.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 — Contact -->
+    <section class="contact" id="contact" aria-labelledby="contact-title">
+      <div class="contact__intro">
+        <p class="eyebrow">07 — Parlons de votre projet</p>
+        <h2 id="contact-title">Une idée à structurer ?<br><em>Échangeons.</em></h2>
+        <p>Vous souhaitez mieux présenter votre marque, organiser un projet ou accompagner votre équipe ? Expliquez-moi votre besoin.</p>
+
+        <div class="contact__links">
+          <a href="https://wa.me/2290161585786" target="_blank" rel="noopener noreferrer">
+            <span aria-hidden="true">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-whatsapp"></use></svg>
+            </span>
+            <div>
+              <small>WhatsApp</small>
+              <strong>+229 01 61 58 57 86</strong>
+            </div>
+          </a>
+          <a href="mailto:gbakposamuel@gmail.com">
+            <span aria-hidden="true">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-mail"></use></svg>
+            </span>
+            <div>
+              <small>E-mail</small>
+              <strong>gbakposamuel@gmail.com</strong>
+            </div>
+          </a>
+          <div>
+            <span aria-hidden="true">
+              <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><use href="#icon-map"></use></svg>
+            </span>
+            <div>
+              <small>Localisation</small>
+              <strong>Ladjifarani, Parakou</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="form-row">
+          <label for="name">Votre nom
+            <input id="name" name="name" type="text" placeholder="Nom et prénom" autocomplete="name" required>
+          </label>
+          <label for="email">Votre e-mail
+            <input id="email" name="email" type="email" placeholder="vous@entreprise.com" autocomplete="email" required>
+          </label>
+        </div>
+        <label for="subject">Objet ou besoin
+          <input id="subject" name="subject" type="text" placeholder="Ex. Identité visuelle, gestion de projet..." required>
+        </label>
+        <label for="message">Votre message
+          <textarea id="message" name="message" rows="5" placeholder="Parlez-moi brièvement de votre projet..." required></textarea>
+        </label>
+
+        <p class="form-error" id="form-error" role="alert" hidden></p>
+
+        <button class="form-submit" type="submit">
+          <span>Envoyer mon message</span>
+          <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-arrow"></use></svg>
+        </button>
+
+        <p class="form-note" id="form-note" role="status" aria-live="polite" hidden>
+          Votre application e-mail va s’ouvrir pour finaliser l’envoi.
+        </p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer__top">
+      <a class="brand brand--light" href="#accueil" aria-label="GBAKPO Samuel — Accueil">
+        <span aria-hidden="true">GS</span>
+        <strong>GBAKPO<br>Samuel</strong>
+      </a>
+      <p>Référent digital — J’aide vos projets numériques à avancer avec clarté.</p>
+      <a class="social-link" href="https://www.facebook.com/samuel.gbakpo.5" target="_blank" rel="noopener noreferrer" aria-label="Profil Facebook de GBAKPO Samuel">
+        <svg class="icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><use href="#icon-facebook"></use></svg>
+      </a>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="current-year">2026</span> GBAKPO Samuel</span>
+      <span>Parakou · Bénin · À distance</span>
+      <a href="#accueil">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+</div>
+
+<script src="script.js" defer></script>
 </body>
 </html>
